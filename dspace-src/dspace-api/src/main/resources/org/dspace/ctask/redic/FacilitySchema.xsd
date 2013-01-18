@@ -1,0 +1,36 @@
+<!-- Initial schema for the ingested Facility data -->
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+<xs:element name="facility">
+  <xs:complexType>
+    <xs:sequence>
+      <!-- definition of simple elements -->
+        <xs:element name="buildingID" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="contact2Name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="contact2Phone" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="contact2URL" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="contact2Email" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="description" type="xs:string" maxOccurs="1"/>
+        <xs:element name="eprintsShelfID" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="facultyProfessionalService" type="xs:string" maxOccurs="1"/>
+        <xs:element name="id1" type="xs:string" maxOccurs="1"/>
+        <xs:element name="locationID" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="name1" type="xs:string" maxOccurs="1"/>
+        <xs:element name="orgUnitID" type="xs:string" maxOccurs="1"/>
+        <xs:element name="publicContact1Name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="publicContact1phone" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="publicContact1URL" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="publicContact1Email" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="RCUKCostedFacility" type="xs:string" maxOccurs="1"/>
+        <xs:element name="serviceLevel" type="xs:string" maxOccurs="1"/>
+        <xs:element name="taxonomy" type="xs:string" maxOccurs="1"/>
+        <xs:element name="webAddress" type="xs:string"  minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

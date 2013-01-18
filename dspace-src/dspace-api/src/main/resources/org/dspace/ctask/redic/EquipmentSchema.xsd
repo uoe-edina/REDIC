@@ -1,0 +1,51 @@
+<!-- Initial schema for the ingested Equipment data -->
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name="equipment">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- definition of simple elements -->
+                <xs:element name="approvalStatus" type="xs:boolean" maxOccurs="1"/>
+                <xs:element name="assetCost" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="attachments" type="xs:boolean" maxOccurs="1"/>
+                <xs:element name="buildingID" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="contact1Email" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="contact1Name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="contact1Phone" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="contact1URL" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="created" type="xs:string" maxOccurs="1"/>
+                <xs:element name="description" minOccurs="0" maxOccurs="1">
+                    <xs:complexType> 
+                        <xs:sequence >
+                            <xs:element name="div" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="equipmentWebPage" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="equipmentID" type="xs:string" maxOccurs="1"/>
+                <xs:element name="facultyprofessionalService" type="xs:string" maxOccurs="1"/>
+                <xs:element name="id" type="xs:integer" maxOccurs="1"/>
+                <xs:element name="itemType" type="xs:integer" maxOccurs="1"/>
+                <xs:element name="level" type="xs:integer" maxOccurs="1"/>
+                <xs:element name="locationID" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="modified" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="name" type="xs:string" maxOccurs="1"/>
+                <xs:element name="name1" type="xs:string" maxOccurs="1"/>
+                <xs:element name="orgUnitID" type="xs:string" maxOccurs="1"/>
+                <xs:element name="propertybag" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="publishingLevel" type="xs:string" maxOccurs="1"/>
+                <xs:element name="relatedFacilityID" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="simpleNameIndustryName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="supplierWebPageURL" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="taxonomy" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="URLPath" type="xs:string" maxOccurs="1"/>
+                <xs:element name="uniqueID" type="xs:string" maxOccurs="1"/>
+                <xs:element name="universityAssetCode" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="owsHiddenVersion" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
